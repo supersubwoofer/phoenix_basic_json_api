@@ -10,9 +10,7 @@ defmodule PlannerWeb.UserViewTest do
 
     assert rendered_user == %{
       email: user.email,
-      encrypted_password: user.encrypted_password,
-      inserted_at: user.inserted_at,
-      updated_at: user.updated_at
+      encrypted_password: user.encrypted_password
     }
   end
 
