@@ -1,17 +1,18 @@
 defmodule PlannerWeb.UserControllerTest do
   use PlannerWeb.ConnCase
-
+  import Planner.Factory
+  
   test "#index renders a list of users" do
     conn = build_conn()
     user = insert(:user)
 
     conn = get conn, user_path(conn, :index)
 
-    assert json_response(conn, 200) == render_json("index.json", todos: [todo])
+    assert json_response(conn, 200) == render_json("index.json", users: [user])
   end
 
   test "#show renders a single user" do
-  conn = build_conn()
+    conn = build_conn()
     user = insert(:user)
 
     conn = get conn, user_path(conn, :show, user)
@@ -22,7 +23,7 @@ defmodule PlannerWeb.UserControllerTest do
   defp render_json(template, assigns) do
     assigns = Map.new(assigns)
 
-    Planner.UserView.render(template, assigns)
+    PlannerWeb.UserView.render(template, assigns)
     |> Poison.encode!
     |> Poison.decode!
   end

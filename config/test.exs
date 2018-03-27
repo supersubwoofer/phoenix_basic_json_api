@@ -16,5 +16,5 @@ config :planner, Planner.Repo,
   password: "postgres",
   database: "planner_test",
   hostname: "localhost",
-  post: 5433,
+  port: 5433,
   pool: Ecto.Adapters.SQL.Sandbox

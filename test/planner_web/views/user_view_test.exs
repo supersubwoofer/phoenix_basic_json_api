@@ -1,10 +1,10 @@
 defmodule PlannerWeb.UserViewTest do
-  use ModelCase
-  import PlannerWeb.Factory
+  use PlannerWeb.ConnCase
+  import Planner.Factory
   alias PlannerWeb.UserView
 
   test "user_json" do
-    user = insert(:todo)
+    user = insert(:user)
 
     rendered_user = UserView.user_json(user)
 
