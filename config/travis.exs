@@ -16,4 +16,5 @@ config :my_app, MyApp.Repo,
   password: "",
   database: "my_app_test",
   hostname: "localhost",
+  port: 5433,
   pool: Ecto.Adapters.SQL.Sandbox
