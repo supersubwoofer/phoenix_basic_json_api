@@ -7,12 +7,9 @@ Create a basic Phoenix User JSON API [1][2][3]
 Steps:
 
 1. Define Context
-
-lib
-├── my_app
-│   ├── accounts
-│   │   ├── accounts.ex
-│   │   └── user.ex
+    * accounts
+        * accounts.ex
+        * user.ex
 2. Write Tests !!!
     1. UserControllerTest
     2. UserViewTest
