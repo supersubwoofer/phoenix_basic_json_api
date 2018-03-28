@@ -21,6 +21,8 @@ services:
 
 before_script:
   - cp config/travis.exs config/test.exs
+  - sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+  - sudo service postgresql restart
 
 script:
   - mix test
