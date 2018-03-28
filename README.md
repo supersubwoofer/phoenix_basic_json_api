@@ -7,11 +7,12 @@ Create a basic Phoenix User JSON API [1][2][3]
 Steps:
 
 1. Define Context
-    lib
-    ├── my_app
-    │   ├── accounts
-    │   │   ├── accounts.ex
-    │   │   └── user.ex
+
+lib
+├── my_app
+│   ├── accounts
+│   │   ├── accounts.ex
+│   │   └── user.ex
 2. Write Tests !!!
     1. UserControllerTest
     2. UserViewTest
@@ -33,6 +34,6 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
 ## Reference
 
-[1] Paul Smith, (2017) [Building and testing a Phoenix JSON API](https://robots.thoughtbot.com/building-a-phoenix-json-api)
-[2] Chris McCord (2017) [Phoenix 1.3.0 released](http://phoenixframework.org/blog/phoenix-1-3-0-released)
-[3] David Bernheisel (2017) [Lessons From Using Phoenix 1.3](https://robots.thoughtbot.com/lessons-from-using-phoenix-1-3#experience)
+* [1] Paul Smith, (2017) [Building and testing a Phoenix JSON API](https://robots.thoughtbot.com/building-a-phoenix-json-api)
+* [2] Chris McCord (2017) [Phoenix 1.3.0 released](http://phoenixframework.org/blog/phoenix-1-3-0-released)
+* [3] David Bernheisel (2017) [Lessons From Using Phoenix 1.3](https://robots.thoughtbot.com/lessons-from-using-phoenix-1-3#experience)
