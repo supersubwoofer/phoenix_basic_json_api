@@ -21,7 +21,6 @@ services:
 
 before_script:
   - cp config/travis.exs config/test.exs
-  - psql -c 'create database my_app_test;' -U postgres
   - mix do ecto.create, ecto.migrate
 
 script:
