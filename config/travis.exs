@@ -13,7 +13,6 @@ config :logger, level: :warn
 config :my_app, MyApp.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "",
   database: "my_app_test",
   hostname: "localhost",
   port: 5433,
