@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/supersubwoofer/phoenix_basic_json_api.svg?branch=master)](https://travis-ci.org/supersubwoofer/phoenix_basic_json_api)
+
 # MyApp
 
 Create a basic Phoenix User JSON API [1][2][3]
