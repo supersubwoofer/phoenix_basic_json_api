@@ -1,6 +1,6 @@
-defmodule PlannerWeb.UserController do
-  use PlannerWeb, :controller
-  alias Planner.Accounts
+defmodule MyAppWeb.UserController do
+  use MyAppWeb, :controller
+  alias MyApp.Accounts
 
   def index(conn, _params) do
     users = Accounts.list_users()

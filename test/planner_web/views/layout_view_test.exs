@@ -1,3 +1,3 @@
-defmodule PlannerWeb.LayoutViewTest do
-  use PlannerWeb.ConnCase, async: true
+defmodule MyAppWeb.LayoutViewTest do
+  use MyAppWeb.ConnCase, async: true
 end

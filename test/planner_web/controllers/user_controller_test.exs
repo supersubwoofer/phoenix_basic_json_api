@@ -1,6 +1,6 @@
-defmodule PlannerWeb.UserControllerTest do
-  use PlannerWeb.ConnCase
-  import Planner.Factory
+defmodule MyAppWeb.UserControllerTest do
+  use MyAppWeb.ConnCase
+  import MyApp.Factory
   
   test "#index renders a list of users" do
     conn = build_conn()
@@ -23,7 +23,7 @@ defmodule PlannerWeb.UserControllerTest do
   defp render_json(template, assigns) do
     assigns = Map.new(assigns)
 
-    PlannerWeb.UserView.render(template, assigns)
+    MyAppWeb.UserView.render(template, assigns)
     |> Poison.encode!
     |> Poison.decode!
   end

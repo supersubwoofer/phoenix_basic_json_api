@@ -1,4 +1,4 @@
-defmodule PlannerWeb.ConnCase do
+defmodule MyAppWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -18,18 +18,18 @@ defmodule PlannerWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      import PlannerWeb.Router.Helpers
+      import MyAppWeb.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint PlannerWeb.Endpoint
+      @endpoint MyAppWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Planner.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(MyApp.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Planner.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(MyApp.Repo, {:shared, self()})
     end
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end

@@ -1,6 +1,6 @@
-defmodule Planner.Accounts do
-  alias Planner.Repo
-  alias Planner.Accounts.User
+defmodule MyApp.Accounts do
+  alias MyApp.Repo
+  alias MyApp.Accounts.User
 
   def list_users do
     Repo.all(User)

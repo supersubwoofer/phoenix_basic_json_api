@@ -1,6 +1,6 @@
-defmodule Planner.Factory do
-  use ExMachina.Ecto, repo: Planner.Repo
-  alias Planner.Accounts.User
+defmodule MyApp.Factory do
+  use ExMachina.Ecto, repo: MyApp.Repo
+  alias MyApp.Accounts.User
 
   def user_factory do
     %User{

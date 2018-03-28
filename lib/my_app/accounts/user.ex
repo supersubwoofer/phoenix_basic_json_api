@@ -1,7 +1,7 @@
-defmodule Planner.Accounts.User do
+defmodule MyApp.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Planner.Accounts.User
+  alias MyApp.Accounts.User
 
   schema "users" do
     field :email, :string

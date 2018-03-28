@@ -1,5 +1,5 @@
-defmodule PlannerWeb.UserView do
-  use PlannerWeb, :view
+defmodule MyAppWeb.UserView do
+  use MyAppWeb, :view
 
   def render("index.json", %{users: users}) do
     %{

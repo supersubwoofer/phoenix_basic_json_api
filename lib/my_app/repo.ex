@@ -1,5 +1,5 @@
-defmodule Planner.Repo do
-  use Ecto.Repo, otp_app: :planner
+defmodule MyApp.Repo do
+  use Ecto.Repo, otp_app: :my_app
 
   @doc """
   Dynamically loads the repository url from the

@@ -1,4 +1,4 @@
-defmodule PlannerWeb.ChannelCase do
+defmodule MyAppWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule PlannerWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint PlannerWeb.Endpoint
+      @endpoint MyAppWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Planner.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(MyApp.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Planner.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(MyApp.Repo, {:shared, self()})
     end
     :ok
   end

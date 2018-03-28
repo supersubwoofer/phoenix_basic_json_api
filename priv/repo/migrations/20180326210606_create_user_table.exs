@@ -1,4 +1,4 @@
-defmodule Planner.Repo.Migrations.CreateUsersTable do
+defmodule MyApp.Repo.Migrations.CreateUsersTable do
   use Ecto.Migration
 
   def up do

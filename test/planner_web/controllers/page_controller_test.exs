@@ -1,5 +1,5 @@
-defmodule PlannerWeb.PageControllerTest do
-  use PlannerWeb.ConnCase
+defmodule MyAppWeb.PageControllerTest do
+  use MyAppWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

@@ -1,4 +1,4 @@
-# Planner
+# MyApp
 
 Create a basic Phoenix User JSON API [1][2][3]
 

@@ -1,4 +1,4 @@
-defmodule PlannerWeb.ErrorHelpers do
+defmodule MyAppWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule PlannerWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(PlannerWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(MyAppWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(PlannerWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(MyAppWeb.Gettext, "errors", msg, opts)
     end
   end
 end

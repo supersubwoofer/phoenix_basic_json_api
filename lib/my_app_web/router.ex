@@ -1,5 +1,5 @@
-defmodule PlannerWeb.Router do
-  use PlannerWeb, :router
+defmodule MyAppWeb.Router do
+  use MyAppWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,13 +13,13 @@ defmodule PlannerWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", PlannerWeb do
+  scope "/", MyAppWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
-  scope "/api", PlannerWeb do
+  scope "/api", MyAppWeb do
     pipe_through :api
 
     resources "/users", UserController, only: [:index]

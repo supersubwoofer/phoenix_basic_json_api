@@ -1,7 +1,7 @@
-defmodule PlannerWeb.UserViewTest do
-  use PlannerWeb.ConnCase
-  import Planner.Factory
-  alias PlannerWeb.UserView
+defmodule MyAppWeb.UserViewTest do
+  use MyAppWeb.ConnCase
+  import MyApp.Factory
+  alias MyAppWeb.UserView
 
   test "user_json" do
     user = insert(:user)

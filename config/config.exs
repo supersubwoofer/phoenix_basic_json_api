@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :planner,
-  ecto_repos: [Planner.Repo]
+config :my_app,
+  ecto_repos: [MyApp.Repo]
 
 # Configures the endpoint
-config :planner, PlannerWeb.Endpoint,
+config :my_app, MyAppWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "HuRHgphySa6yg8GiY3m5CUgpPU/JyHscJxXxQuqJNS1q0C1dXBmzFmX48jOtBvxo",
-  render_errors: [view: PlannerWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Planner.PubSub,
+  render_errors: [view: MyAppWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: MyApp.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
