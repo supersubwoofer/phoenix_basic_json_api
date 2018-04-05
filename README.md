@@ -1,12 +1,21 @@
 [![Build Status](https://travis-ci.org/supersubwoofer/phoenix_basic_json_api.svg?branch=master)](https://travis-ci.org/supersubwoofer/phoenix_basic_json_api)
 
-# MyApp
+# Phoenix basic User JSON API
 
 Create a basic Phoenix User JSON API [1][2][3]
 
-## Descriptions
+## To start your Phoenix server:
 
-Steps:
+  * Install dependencies with `mix deps.get`
+  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Install Node.js dependencies with `cd assets && npm install`
+  * Start Phoenix endpoint with `mix phx.server`
+
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+
+## Roadmap
 
 1. Define Context
     * accounts
@@ -19,17 +28,6 @@ Steps:
 4. Seed users to database if necessary
 5. Create Accounts module (context) as business logic API
 6. Add new route |> create UserController |> create UserView
-
-## To start your Phoenix server:
-
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
 ## Reference
 
